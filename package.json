@@ -1,0 +1,16 @@
+{
+  "name": "ri-gen",
+  "version": "1.0.0",
+  "description": "RI-gen is a simple and intuitive command-line tool designed to strealine the process of setting up new projects.",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "github": "https://github.com/Ridwanade0/ri-gen",
+  "keywords": [
+    "Project",
+    "starter"
+  ],
+  "author": "Ridwan Adegboyega Oyeniyi",
+  "license": "ISC"
+}
