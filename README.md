@@ -1,17 +1,18 @@
-# RI-Gen
+# ri-gen
 
-RI-Gen (Ridwan's Generator) is a command-line tool designed to simplify the process of setting up new projects. It offers a hassle-free way to initialize project directories, create essential files, and kickstart development with ease.
+`ri-gen` is a Node.js package designed to streamline the process of creating a basic project structure for web development. With `ri-gen`, you can quickly set up directories and files for your HTML, CSS, and JavaScript projects, saving you time and effort.
 
 ## Features
 
-- **Effortless Setup**: RI-Gen streamlines project setup by providing a straightforward interface to create project directories and essential files.
-- **Customizable Templates**: Easily customize the generated files to match your project's requirements.
-- **Interactive CLI**: RI-Gen offers an interactive command-line interface (CLI) to guide users through the project setup process.
-- **Automatic Folder Structure**: Quickly generate project folder structures with nested directories for assets, scripts, stylesheets, and more.
+- **Interactive CLI**: `ri-gen` provides an interactive command-line interface (CLI) that guides you through the process of creating your project structure.
+- **Customizable Templates**: Choose whether to create the project in the current directory or in a new directory, and customize your project name.
+- **HTML, CSS, JavaScript Templates**: Generates boilerplate code for HTML, CSS, and JavaScript files.
+- **Flexible Directory Structure**: Easily customize the directory structure to fit your project's needs.
+- **Error Handling**: `ri-gen` includes error handling for file system operations, ensuring a smooth user experience.
 
 ## Installation
 
-You can install RI-Gen globally using npm:
+You can install `ri-gen` globally using npm:
 
 ```bash
 npm install -g ri-gen
@@ -19,24 +20,52 @@ npm install -g ri-gen
 
 ## Usage
 
-To create a new project with RI-Gen, simply run the following command in your terminal:
+To create a project in the current directory, run:
 
 ```bash
 ri-gen
 ```
 
-Follow the prompts to choose the project location and provide a name for your project. RI-Gen will then generate the necessary files and directories based on your input.
+To create a project in a new directory, run:
+
+```bash
+ri-gen <project-name>
+```
+
+Follow the prompts in the CLI to customize your project.
 
 ## Example
 
-Here's a simple example of using RI-Gen to create a new project:
+Let's say you want to create a project named `my-project`:
 
 ```bash
-ri-gen
+ri-gen my-project
 ```
 
-Once executed, RI-Gen will prompt you to specify whether you want to create the project in the current directory or in a new folder. After making your selection and providing a project name, RI-Gen will proceed to create the project files and directories.
+This will create the following directory structure:
+
+```
+my-project/
+  ├── index.html
+  ├── README.md
+  ├── pages/
+  ├── assets/
+  │   ├── images/
+  │   ├── svg/
+  │   ├── videos/
+  │   └── audio/
+  ├── scripts/
+  │   └── script.js
+  └── styles/
+      └── style.css
+```
 
 ## Contributing
 
-Contributions are welcome! Feel free to submit bug reports, feature requests, or pull requests on [GitHub](https://github.com/Ridwanade0/ri-gen).
+Contributions are welcome! If you find any issues or have suggestions for improvements, please open an issue or submit a pull request on the [GitHub repository](https://github.com/yourusername/ri-gen).
+
+
+## Acknowledgements
+
+- Special thanks to [Node.js](https://nodejs.org/) for providing the runtime environment.
+- Inspired by similar projects such as `create-react-app` and `vite`.
